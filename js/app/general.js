@@ -205,11 +205,9 @@ define(["jquery","allsite"],function($){
 	});
 
 		/* OFFCANVAS MENU FOR DRUPAL FEEDS FACETS MENU
-		 -----------------------------------------------------------------*/
-		 if(document.getElementById('facet-refine'))
-		 {
-		 		 
-  		(function() {
+		-----------------------------------------------------------------*/
+		if(document.getElementById('facet-refine')) {
+		(function() {
 			var facets = {
 			
 			navOpen: document.getElementById('facet-refine'),

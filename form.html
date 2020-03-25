@@ -11,12 +11,12 @@
 
 	<title>UCL Design Language</title>
 
-	<link href="//static.ucl.ac.uk/indigo/css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="./css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-	<script src="//static.ucl.ac.uk/indigo/js/lib/jquery-1.7.1.min.js"></script>
-	<script src="//static.ucl.ac.uk/indigo/js/src/all-site.js"></script>
+	<script src="./js/lib/jquery-1.7.1.min.js"></script>
+	<script src="./js/src/all-site.js"></script>
 
-	<script src="//static.ucl.ac.uk/indigo/js/lib/modernizr-custom.js"></script>
+	<script src="./js/lib/modernizr-custom.js"></script>
 
 	<script>
 		var cuttingTheMustard = document.querySelector && window.localStorage && window.addEventListener;
@@ -26,22 +26,22 @@
 		test : cuttingTheMustard
 		//if old browser load the shiv
 		,nope : [
-		'//static.ucl.ac.uk/indigo/js/lib/html5shiv-printshiv.min.js'
-		,'//static.ucl.ac.uk/indigo/js/lib/respond.min.js'
+		'./js/lib/html5shiv-printshiv.min.js'
+		,'./js/lib/respond.min.js'
 		]
 	});
 	//set conditional assets for main.js
 	var globalSiteSpecificVars = {
-		pathToJquery: '//static.ucl.ac.uk/indigo/js/lib/jquery-1.9.1.min'
+		pathToJquery: './js/lib/jquery-1.9.1.min'
 		,googleAnalyticsIdsArray: []//specify array of site specific id's NOT UCL generic UA-943297-1
 	}
 	if(cuttingTheMustard){
-		globalSiteSpecificVars.pathToJquery = "//static.ucl.ac.uk/indigo/js/lib/jquery-2.1.1.min";
+		globalSiteSpecificVars.pathToJquery = "./js/lib/jquery-2.1.1.min";
 	}
 </script>
 
-<script src="//static.ucl.ac.uk/indigo/js/lib/require.min.js"></script>
-<script src="//static.ucl.ac.uk/indigo/js/main.js"></script>
+<script src="./js/lib/require.min.js"></script>
+<script src="./js/main.js"></script>
 <script>
 	require(["app/general","app/searchWithAutoComplete"]);//load the default stuff
 </script>

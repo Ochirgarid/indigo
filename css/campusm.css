@@ -369,8 +369,7 @@ body {
   background-color: #d9d9d1;
   overflow-x: hidden;
   line-height: 1.7;
-  -webkit-hyphens: none;
-          hyphens: none;
+  hyphens: none;
   -ms-hyphens: none;
   word-wrap: break-word;
   -webkit-text-size-adjust: none;
@@ -797,3 +796,5 @@ figure + figure, figure + p {
 
   .img-pull-left.large-image, .img-pull-left.xl-image, .img-pull-left.xxl-image, .img-pull-right.large-image, .img-pull-right.xl-image, .img-pull-right.xxl-image {
     width: 100%; } }
+
+/*# sourceMappingURL=campusm.css.map */
